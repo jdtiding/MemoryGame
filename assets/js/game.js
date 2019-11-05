@@ -6,7 +6,16 @@ $(document).ready(function () {
   
   let displayCardsArray = [];
   let activeCardsArray = lettersCardsArray;
-  
+
+  // theme color changing
+  $('#theme-light').click(function () {
+    $('#content-wrapper').addClass('content-wrapper-light').removeClass('content-wrapper-dark');
+ });
+
+ $('#theme-dark').click(function () {
+  $('#content-wrapper').addClass(' content-wrapper-dark').removeClass('content-wrapper-light');
+});
+
   // difficulty level selection buttons
   $('#level-easy').click(function () {
      clearGrid();

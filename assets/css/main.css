@@ -5,18 +5,18 @@ body {
   padding:0;
 }
 
-.content-wrapper {
+#content-wrapper {
   min-height:100%;
   position:relative;
 }
 
 /* -------------------------- Colors Themes ----------------------  */
-/*
+
 .content-wrapper-light {
-  background-color: #fafafa;
+  background-color: #e5e5e5;
   color: #000;
 }
-*/
+
 .content-wrapper-dark {
   background-color: #2d2d2d;
   color: #fafafa;
