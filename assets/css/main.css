@@ -461,7 +461,7 @@ footer .container-fluid {
 @media (min-width: 992px) {
   .card-easy {
     width: 160px;
-    height: 1600px;
+    height: 160px;
   }
   .card-medium {
     width: 160px;
