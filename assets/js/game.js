@@ -147,7 +147,15 @@ $(document).ready(function () {
 // clear grid - prevents double grids
 function clearGrid(){
   $(".card-medium, .card-hard, .card-easy").remove();
-};  
+};
+
+//FLIPPING CARDS NOT WORKING ** to be solved
+$('.flip-card-inner').click(function() {
+  if ($(this).hasClass('face-down')) {
+      $(this).addClass('is-flipped').removeClass('face-down');
+  } console.log('flip');
+  
+});
 
   // first page load
   createDashboardMedium();
