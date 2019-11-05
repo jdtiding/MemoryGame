@@ -150,9 +150,9 @@ function clearGrid(){
 };
 
 //FLIPPING CARDS NOT WORKING ** to be solved
-$('.flip-card-inner').click(function() {
+$('#force-flip').click(function() {
   if ($(this).hasClass('face-down')) {
-      $(this).addClass('is-flipped').removeClass('face-down');
+      $(this).addClass('is-flipped face-up').removeClass('face-down');
   } console.log('flip');
   
 });
