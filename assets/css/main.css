@@ -73,7 +73,6 @@ body {
   height: 120px;
   }
 
-
 .card-medium {
   margin: 0.2rem;
   width: 80px;
@@ -84,6 +83,46 @@ body {
   margin: 0.2rem;
   width: 60px;
   height: 60px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY( -180deg );
+}
+
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
+  background-image: url("../images/n01.jpg");
+ 
+}
+
+.is-flipped {
+  transform: rotateY(-180deg);
+}
+.card-easy:active,
+.card-medium:active,
+.card-hard:active {
+  transform: scale(0.97);
+  transition: transform .1s; 
+}
+
+.disabled {
+  pointer-events: none; 
 }
 
 .p01 {
