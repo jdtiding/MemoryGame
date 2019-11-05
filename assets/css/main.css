@@ -1,0 +1,72 @@
+html, 
+body {
+  height: 100%;
+  margin: 0;
+  padding:0;
+}
+
+.content-wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+/* -------------------------- Colors Themes ----------------------  */
+/*
+.content-wrapper-light {
+  background-color: #fafafa;
+  color: #000;
+}
+*/
+.content-wrapper-dark {
+  background-color: #2d2d2d;
+  color: #fafafa;
+}
+
+.card-light {
+  background: grey;
+  border: 1px solid red;
+}
+
+.card-dark {
+  background:  #117f93;
+  border: 1px solid #fafafa;
+}
+
+/* -------------------------- Navbar Section ----------------------  */
+.navbar {
+  background-color: rgb(8, 8, 8,0.9)!important;
+}
+
+.navbar-dark .navbar-text {
+  color: #fafafa;
+}
+
+.bg-light {
+  border-bottom: 0.07rem solid grey;
+}
+
+/* -------------------------- Footer Section ----------------------  */
+footer {
+  background-color: #000;
+}
+
+footer .container-fluid {
+  margin: 0;
+  padding-bottom: .5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.footer-copyright {
+  width: 100%;
+  color: #fafafa;
+  letter-spacing: 0.1rem;
+}
+
+.footer-copyright a {
+  color: #fafafa;
+}
+
+.footer-copyright a:hover {
+  text-decoration: none;
+}
