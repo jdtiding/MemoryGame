@@ -45,6 +45,338 @@ body {
   border-bottom: 0.07rem solid grey;
 }
 
+/* -------------------------- Game Section ----------------------  */
+.dashboard {
+  min-height: 100vh;
+  padding: 5rem 2rem 2rem 2rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+ }
+
+.game-card {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  perspective: 600px;
+}
+
+.card-easy {
+  margin: 0.2rem;
+  width: 120px;
+  height: 120px;
+  }
+
+
+.card-medium {
+  margin: 0.2rem;
+  width: 80px;
+  height: 80px;
+}
+
+.card-hard {
+  margin: 0.2rem;
+  width: 60px;
+  height: 60px;
+}
+
+.p01 {
+  background-image: url("../images/01.jpg");
+  }
+  .p02 {
+    background-image: url("../images/02.jpg");
+  }
+  .p03 {
+    background-image: url("../images/03.jpg");
+  }
+  .p04 {
+    background-image: url("../images/04.jpg");
+  }
+  .p05 {
+    background-image: url("../images/05.jpg");
+  }
+  .p06 {
+    background-image: url("../images/06.jpg");
+  }
+  .p07 {
+    background-image: url("../images/07.jpg");
+  }
+  .p08 {
+    background-image: url("../images/08.jpg");
+  }
+  .p09 {
+    background-image: url("../images/09.jpg");
+  }
+  .p10 {
+    background-image: url("../images/10.jpg");
+  }
+  .p11 {
+    background-image: url("../images/11.jpg");
+  }
+  .p12 {
+    background-image: url("../images/12.jpg");
+  }
+  .p13 {
+    background-image: url("../images/13.jpg");
+  }
+  .p14 {
+    background-image: url("../images/14.jpg");
+  }
+  .p15 {
+    background-image: url("../images/15.jpg");
+  }
+  .p16 {
+    background-image: url("../images/16.jpg");
+  }
+  .p17 {
+    background-image: url("../images/17.jpg");
+  }
+  .p18 {
+    background-image: url("../images/18.jpg");
+  }
+  .p19 {
+    background-image: url("../images/19.jpg");
+  }
+  .p20 {
+    background-image: url("../images/20.jpg");
+  }
+  .p21 {
+    background-image: url("../images/21.jpg");
+  }
+  .p22 {
+    background-image: url("../images/22.jpg");
+  }
+  .p23 {
+    background-image: url("../images/23.jpg");
+  }
+  .p24 {
+    background-image: url("../images/24.jpg");
+  }
+  .p25 {
+    background-image: url("../images/25.jpg");
+  }
+  .p26 {
+    background-image: url("../images/26.jpg");
+  }
+  .p27 {
+    background-image: url("../images/27.jpg");
+  }
+  .p28 {
+    background-image: url("../images/28.jpg");
+  }
+  .p29 {
+    background-image: url("../images/29.jpg");
+  }
+  .p30 {
+    background-image: url("../images/30.jpg");
+  }
+  .p31 {
+    background-image: url("../images/31.jpg");
+  }
+  .p32 {
+    background-image: url("../images/32.jpg");
+  }
+  
+  .l01 {
+   background-image: url("../images/l01.jpg");
+  }
+  .l02 {
+    background-image: url("../images/l02.jpg");
+  }
+  .l03 {
+    background-image: url("../images/l03.jpg");
+  }
+  .l04 {
+    background-image: url("../images/l04.jpg");
+  }
+  .l05 {
+    background-image: url("../images/l05.jpg");
+  }
+  .l06 {
+    background-image: url("../images/l06.jpg");
+  }
+  .l07 {
+    background-image: url("../images/l07.jpg");
+  }
+  .l08 {
+    background-image: url("../images/l08.jpg");
+  }
+  .l09 {
+    background-image: url("../images/l09.jpg");
+  }
+  .l10 {
+    background-image: url("../images/l10.jpg");
+  }
+  .l11 {
+    background-image: url("../images/l11.jpg");
+  }
+  .l12 {
+    background-image: url("../images/l12.jpg");
+  }
+  .l13 {
+    background-image: url("../images/l13.jpg");
+  }
+  .l14 {
+    background-image: url("../images/l14.jpg");
+  }
+  .l15 {
+    background-image: url("../images/l15.jpg");
+  }
+  .l16 {
+    background-image: url("../images/l16.jpg");
+  }
+  .l17 {
+    background-image: url("../images/l17.jpg");
+  }
+  .l18 {
+    background-image: url("../images/l18.jpg");
+  }
+  .l19 {
+    background-image: url("../images/l19.jpg");
+  }
+  .l20 {
+    background-image: url("../images/l20.jpg");
+  }
+  .l21 {
+    background-image: url("../images/l21.jpg");
+  }
+  .l22 {
+    background-image: url("../images/l22.jpg");
+  }
+  .l23 {
+    background-image: url("../images/l23.jpg");
+  }
+  .l24 {
+    background-image: url("../images/l24.jpg");
+  }
+  .l25 {
+    background-image: url("../images/l25.jpg");
+  }
+  .l26 {
+    background-image: url("../images/l26.jpg");
+  }
+  .l27 {
+    background-image: url("../images/l27.jpg");
+  }
+  .l28 {
+    background-image: url("../images/l28.jpg");
+  }
+  .l29 {
+    background-image: url("../images/l29.jpg");
+  }
+  .l30 {
+    background-image: url("../images/l30.jpg");
+  }
+  .l31 {
+    background-image: url("../images/l31.jpg");
+  }
+  .l32 {
+    background-image: url("../images/l32.jpg");
+   }
+  
+  .n01 {
+    background-image: url("../images/n01.jpg");
+  }
+  .n02 {
+    background-image: url("../images/n02.jpg");
+  }
+  .n03 {
+    background-image: url("../images/n03.jpg");
+  }
+  .n04 {
+    background-image: url("../images/n04.jpg");
+  }
+  .n05 {
+    background-image: url("../images/n05.jpg");
+  }
+  .n06 {
+    background-image: url("../images/n06.jpg");
+  }
+  .n07 {
+    background-image: url("../images/n07.jpg");
+  }
+  .n08 {
+    background-image: url("../images/n08.jpg");
+  }
+  .n09 {
+    background-image: url("../images/n09.jpg");
+  }
+  .n10 {
+    background-image: url("../images/n10.jpg");
+  }
+  .n11 {
+    background-image: url("../images/n11.jpg");
+  }
+  .n12 {
+    background-image: url("../images/n12.jpg");
+  }
+  .n13 {
+    background-image: url("../images/n13.jpg");
+  }
+  .n14 {
+    background-image: url("../images/n14.jpg");
+  }
+  .n15 {
+    background-image: url("../images/n15.jpg");
+  }
+  .n16 {
+    background-image: url("../images/n16.jpg");
+  }
+  .n17 {
+    background-image: url("../images/n17.jpg");
+  }
+  .n18 {
+    background-image: url("../images/n18.jpg");
+  }
+  .n19 {
+    background-image: url("../images/n19.jpg");
+  }
+  .n20 {
+    background-image: url("../images/n20.jpg");
+  }
+  .n21 {
+    background-image: url("../images/n21.jpg");
+  }
+  .n22 {
+    background-image: url("../images/n22.jpg");
+  }
+  .n23 {
+    background-image: url("../images/n23.jpg");
+  }
+  .n24 {
+    background-image: url("../images/n24.jpg");
+  }
+  .n25 {
+    background-image: url("../images/n25.jpg");
+  }
+  .n26 {
+    background-image: url("../images/n26.jpg");
+  }
+  .n27 {
+    background-image: url("../images/n27.jpg");
+  }
+  .n28 {
+    background-image: url("../images/n28.jpg");
+  }
+  .n29 {
+    background-image: url("../images/n29.jpg");
+  }
+  .n30 {
+    background-image: url("../images/n30.jpg");
+  }
+  .n31 {
+    background-image: url("../images/n31.jpg");
+  }
+  .n32 {
+    background-image: url("../images/n32.jpg");
+  }
+
 /* -------------------------- Footer Section ----------------------  */
 footer {
   background-color: #000;
