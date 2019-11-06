@@ -67,7 +67,7 @@ $(document).ready(function() {
   
   // functions that builds a grid for level easy
   function createDashboardEasy() {
-  let dashboardEasy = $("<div class='card-count card-easy'><div id='force-flip' class='flip-card-inner'><div class='flip-card-front game-card face-down'></div><div class='flip-card-back game-card face-up'></div></div></div>");
+  let dashboardEasy = $("<div class='card-count card-easy'><div class='flip-card-inner'><div class='flip-card-front game-card face-down'></div><div class='flip-card-back game-card face-up'></div></div></div>");
   for (let x = 0; x < 16; x++) {
      dashboardEasy.clone().appendTo('#game');
   }
@@ -75,7 +75,7 @@ $(document).ready(function() {
   
   // functions that builds a grid for level medium
   function createDashboardMedium() {
-  let dashboardMedium = $("<div class='card-count card-medium'><div id='force-flip' class='flip-card-inner'><div class='flip-card-front game-card face-down'></div><div class='flip-card-back game-card face-up'></div></div></div>");
+  let dashboardMedium = $("<div class='card-count card-medium'><div class='flip-card-inner'><div class='flip-card-front game-card face-down'></div><div class='flip-card-back game-card face-up'></div></div></div>");
   for (let x = 0; x < 32; x++) {
     dashboardMedium.clone().appendTo('#game');
   }
@@ -83,7 +83,7 @@ $(document).ready(function() {
   
   // functions that builds a grid for level hard
   function createDashboardHard() {
-  let dashboardHard = $("<div class='card-count card-hard'><div id='force-flip' class='flip-card-inner'><div class='flip-card-front game-card face-down'></div><div class='flip-card-back game-card face-up'></div></div></div>");
+  let dashboardHard = $("<div class='card-count card-hard'><div class='flip-card-inner'><div class='flip-card-front game-card face-down'></div><div class='flip-card-back game-card face-up'></div></div></div>");
   for (let x = 0; x < 64; x++) {
     dashboardHard.clone().appendTo('#game');
   }
@@ -92,33 +92,30 @@ $(document).ready(function() {
   // deck selection button
   $('#pictures-deck').click(function() {
     deckCards(picturesCardsArray);
-    resetGame() 
   });
 
   $('#letters-deck').click(function() {
     deckCards(lettersCardsArray);
-    resetGame() 
   });
 
   $('#numbers-deck').click(function() {
     deckCards(numbersCardsArray);
-    resetGame() 
   });
 
   function deckCards(arr) {
     activeCardsArray = arr;
-    resetGame();
+    clearDeck()
   }
 
   // below code copied (and modified) from:
   // https://github.com/AJGreaves/picflip/blob/master/assets/js/game.js
-  function resetGame() {
-    let num = howManyCards();
-    let cards = createCardsDeck(activeCardsArray, num);
-    setTimeout(function() {
-      displayShuffledCards(cards);
-    }, 100);
-  }
+  // function resetGame() {
+  //   let num = howManyCards();
+  //   let cards = createCardsDeck(activeCardsArray, num);
+  //   setTimeout(function() {
+  //     displayShuffledCards(cards);
+  //   }, 100);
+  // }
   
   // display, create, shuffle cards deck for different levels
   function displayShuffledCards(cards) {
@@ -174,6 +171,10 @@ $(document).ready(function() {
 // clear grid - prevents double grids
 function clearGrid(){
   $(".card-medium, .card-hard, .card-easy").remove();
+};
+// flips open cards when changing card deck
+function clearDeck(){
+  $(".flip-card-inner").removeClass('is-flipped');
 };
 
 // first page load
