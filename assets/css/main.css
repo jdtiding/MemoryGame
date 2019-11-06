@@ -108,8 +108,7 @@ body {
   height: 100%;
   backface-visibility: hidden; 
   background-image: url("../images/n01.jpg");
- 
-}
+ }
 
 .is-flipped {
   transform: rotateY(-180deg);

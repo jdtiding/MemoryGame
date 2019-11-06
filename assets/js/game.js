@@ -57,7 +57,7 @@ $(document).ready(function() {
   
   // functions that builds a grid for level medium
   function createDashboardMedium() {
-  let dashboardMedium = $("<div class='card-count card-medium'><div class='flip-card-inner'><div class='flip-card-front game-card face-down'></div><div class='flip-card-back game-card face-up'></div></div></div>");
+  let dashboardMedium = $("<div class='card-count card-medium'><div id='force-flip' class='flip-card-inner'><div class='flip-card-front game-card face-down'></div><div class='flip-card-back game-card face-up'></div></div></div>");
   for (let x = 0; x < 32; x++) {
     dashboardMedium.clone().appendTo('#game');
   }
