@@ -25,6 +25,12 @@ $(document).ready(function() {
      $('.card-hard').hide();
      $('.card-medium').hide();
      $('.card-easy').show();
+    // solved problem with no-flipping cards, event listener to be added after creating deck
+     $('.flip-card-inner').click(function() {
+      $(this).addClass('is-flipped');
+      console.log('flip');
+   });
+   
   });
  
     $('#level-medium').click(function () {
@@ -35,6 +41,12 @@ $(document).ready(function() {
     $('.card-easy').hide();
     $('.card-hard').hide();
     $('.card-medium').show();
+     // solved problem with no-flipping cards, event listener to be added after creating deck
+    $('.flip-card-inner').click(function() {
+      $(this).addClass('is-flipped');
+      console.log('flip');
+   });
+   
   });
    
   $('#level-hard').click(function () {
@@ -45,6 +57,12 @@ $(document).ready(function() {
     $('.card-easy').hide();
     $('.card-medium').hide();
     $('.card-hard').show();
+     // solved problem with no-flipping cards, event listener to be added after creating deck
+    $('.flip-card-inner').click(function() {
+      $(this).addClass('is-flipped');
+      console.log('flip');
+   });
+   
   });
   
   // functions that builds a grid for level easy
@@ -158,21 +176,15 @@ function clearGrid(){
   $(".card-medium, .card-hard, .card-easy").remove();
 };
 
-//FLIPPING CARDS NOT WORKING ** to be solved
-$('#force-flip').click(function() {
-  if ($(this).hasClass('face-down')) {
-      $(this).addClass('is-flipped face-up').removeClass('face-down');
-  } console.log('flip');
-});
-
-// $('#force-flip').click(function(){
-//   $(this).toggleClass('.is-flipped');
-//   console.log('should flip cards');
-// });
-
 // first page load
 createDashboardMedium();
 displayCardsArrayMedium = createCardsDeck(activeCardsArray, 32)
 displayShuffledCards(displayCardsArrayMedium);
+
+// solved problem with no-flipping cards, event listener to be added after creating deck
+$('.flip-card-inner').click(function() {
+   $(this).addClass('is-flipped');
+   console.log('flip');
+});
 
 }); 
