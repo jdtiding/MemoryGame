@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
   const numbersCardsArray = ['n01', 'n02', 'n03', 'n04', 'n05', 'n06', 'n07', 'n08', 'n09', 'n10', 'n11', 'n12', 'n13', 'n14', 'n15', 'n16', 'n17', 'n18', 'n19', 'n20', 'n21', 'n22', 'n23', 'n24', 'n25', 'n26', 'n27', 'n28', 'n29', 'n30', 'n31', 'n32'];
   const lettersCardsArray = ['l01', 'l02', 'l03', 'l04', 'l05', 'l06', 'l07', 'l08', 'l09', 'l10', 'l11', 'l12', 'l13', 'l14', 'l15', 'l16', 'l17', 'l18', 'l19', 'l20', 'l21', 'l22', 'l23', 'l24', 'l25', 'l26', 'l27', 'l28', 'l29', 'l30', 'l31', 'l32'];
@@ -49,7 +49,7 @@ $(document).ready(function () {
   
   // functions that builds a grid for level easy
   function createDashboardEasy() {
-  let dashboardEasy = $("<div class='card-count card-easy'><div id='force-flip' class='flip-card-inner'><div class='flip-card-back game-card face-down'></div><div class='flip-card-front game-card face-up'></div></div></div>");
+  let dashboardEasy = $("<div class='card-count card-easy'><div id='force-flip' class='flip-card-inner'><div class='flip-card-front game-card face-down'></div><div class='flip-card-back game-card face-up'></div></div></div>");
   for (let x = 0; x < 16; x++) {
      dashboardEasy.clone().appendTo('#game');
   }
@@ -57,7 +57,7 @@ $(document).ready(function () {
   
   // functions that builds a grid for level medium
   function createDashboardMedium() {
-  let dashboardMedium = $("<div class='card-count card-medium'><div id='force-flip' class='flip-card-inner'><div class='flip-card-back game-card face-down'></div><div class='flip-card-front game-card face-up'></div></div></div>");
+  let dashboardMedium = $("<div class='card-count card-medium'><div id='force-flip' class='flip-card-inner'><div class='flip-card-front game-card face-down'></div><div class='flip-card-back game-card face-up'></div></div></div>");
   for (let x = 0; x < 32; x++) {
     dashboardMedium.clone().appendTo('#game');
   }
@@ -104,7 +104,7 @@ $(document).ready(function () {
   
   // display, create, shuffle cards deck for different levels
   function displayShuffledCards(cards) {
-    $('.flip-card-back').each(function(i) {
+    $('.flip-card-front').each(function(i) {
       let lastClass = $(this).attr('class').split(' ').pop();
       if (lastClass == 'game-card') {
           $(this).addClass('game-card').addClass(cards[i]);
@@ -163,11 +163,16 @@ $('#force-flip').click(function() {
   if ($(this).hasClass('face-down')) {
       $(this).addClass('is-flipped face-up').removeClass('face-down');
   } console.log('flip');
-  
 });
 
-  // first page load
-  createDashboardMedium();
-  displayCardsArrayHard = createCardsDeck(activeCardsArray, 32)
-  displayShuffledCards(displayCardsArrayHard);
-  }); 
+// $('#force-flip').click(function(){
+//   $(this).toggleClass('.is-flipped');
+//   console.log('should flip cards');
+// });
+
+// first page load
+createDashboardMedium();
+displayCardsArrayMedium = createCardsDeck(activeCardsArray, 32)
+displayShuffledCards(displayCardsArrayMedium);
+
+}); 
