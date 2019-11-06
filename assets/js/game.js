@@ -92,30 +92,35 @@ $(document).ready(function() {
   // deck selection button
   $('#pictures-deck').click(function() {
     deckCards(picturesCardsArray);
+    resetGame()
+
   });
 
   $('#letters-deck').click(function() {
     deckCards(lettersCardsArray);
+    resetGame() 
   });
 
   $('#numbers-deck').click(function() {
     deckCards(numbersCardsArray);
+    resetGame() 
   });
 
   function deckCards(arr) {
     activeCardsArray = arr;
     clearDeck()
+    resetGame();
   }
 
   // below code copied (and modified) from:
   // https://github.com/AJGreaves/picflip/blob/master/assets/js/game.js
-  // function resetGame() {
-  //   let num = howManyCards();
-  //   let cards = createCardsDeck(activeCardsArray, num);
-  //   setTimeout(function() {
-  //     displayShuffledCards(cards);
-  //   }, 100);
-  // }
+  function resetGame() {
+    let num = howManyCards();
+    let cards = createCardsDeck(activeCardsArray, num);
+    setTimeout(function() {
+      displayShuffledCards(cards);
+    }, 100);
+  }
   
   // display, create, shuffle cards deck for different levels
   function displayShuffledCards(cards) {
